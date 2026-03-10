@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletter Marzo | Kids&Us Nigrán</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+
+<style>
+body{
+margin:0;
+background:#f4f4f4;
+font-family:Arial, sans-serif;
+text-align:center;
+}
+
+header{
+padding:20px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+#flipbook{
+width:90%;
+max-width:900px;
+height:600px;
+margin:40px auto;
+}
+
+#flipbook iframe{
+width:100%;
+height:100%;
+border:none;
+}
+
+.download{
+display:inline-block;
+margin-top:10px;
+padding:12px 20px;
+background:#ff6b8a;
+color:white;
+text-decoration:none;
+border-radius:25px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Newsletter Marzo</h1>
+<p>Kids&Us Nigrán</p>
+
+<a class="download" href="/pdf/newsletter-marzo-kidsandus-nigran.pdf" target="_blank">
+Descargar PDF
+</a>
+</header>
+
+<div id="flipbook">
+<div><iframe src="/pdf/newsletter-marzo-kidsandus-nigran.pdf#page=1"></iframe></div>
+<div><iframe src="/pdf/newsletter-marzo-kidsandus-nigran.pdf#page=2"></iframe></div>
+<div><iframe src="/pdf/newsletter-marzo-kidsandus-nigran.pdf#page=3"></iframe></div>
+<div><iframe src="/pdf/newsletter-marzo-kidsandus-nigran.pdf#page=4"></iframe></div>
+</div>
+
+<script>
+$(document).ready(function() {
+$('#flipbook').turn({
+width:900,
+height:600,
+autoCenter:true
+});
+});
+</script>
+
+</body>
+</html>
